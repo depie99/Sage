@@ -1,0 +1,12 @@
+/* small adjusts, don't necessaries to functioning this filter, this is something visual */
+.btn {
+  margin-bottom:3px;
+}
+.btn:hover{
+  cursor:pointer;
+}
+.btn-outline-primary:focus {
+  background-color:#007bff;
+  color:#fff;
+}
+

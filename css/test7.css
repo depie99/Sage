@@ -1,0 +1,874 @@
+@font-face {
+    font-family: "TitilliumWeb-Regular";
+    src: url("../fonts/TitilliumWeb-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "TitilliumWeb-Bold";
+    src: url("../fonts/TitilliumWeb-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "TitilliumWeb-BoldItalic";
+    src: url("../fonts/TitilliumWeb-BoldItalic.ttf") format("truetype");
+}
+@font-face {
+    font-family: "TitilliumWeb-SemiBoldItalic";
+    src: url("../fonts/TitilliumWeb-SemiBoldItalic.ttf") format("truetype");
+}
+@font-face {
+    font-family: "TitilliumWeb-SemiBold";
+    src: url("../fonts/TitilliumWeb-SemiBold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Teko-Regular";
+    src: url("../fonts/teko-regular.otf") format("opentype");
+}
+@font-face {
+    font-family: "Teko-Medium";
+    src: url("../fonts/teko-medium.otf") format("opentype");
+}
+@font-face {
+    font-family: "Teko-Bold";
+    src: url("../fonts/teko-bold.otf") format("opentype");
+}
+@font-face {
+    font-family: "Teko-semiBold";
+    src: url("../fonts/teko-semibold.otf") format("opentype");
+}
+@font-face {
+    font-family: "Teko-Light";
+    src: url("../fonts/teko-light.otf") format("opentype");
+}
+
+
+body {
+    background-color: rgb(53, 45, 47);
+    font-family: "TitilliumWeb-Regular";
+}
+a {
+    text-decoration: none !important;
+}
+.sage {
+    background-color: rgb(246, 60, 60);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 28px;
+}
+.nav-link {
+    font-size: 16px;
+    font-family: "TitilliumWeb-Regular";
+    color: rgba(255, 255, 255, 0.502);
+    line-height: 1.2;
+}
+nav {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.102);
+}
+li {
+    height: 70px;
+}
+li:hover {
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+li a {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+li a:hover {
+    color: rgb(255, 255, 255);
+}
+nav .dropdown {
+    border-right: 1px solid rgba(255, 255, 255, 0.102);
+}
+nav .dropdown .btn:hover {
+    color: rgb(255, 255, 255);
+}
+nav .dropdown-toggle {
+    color: rgba(255, 255, 255, 0.502);
+    float: right;
+}
+nav .dropdown-menu {
+    margin-top: 18px;
+    left: auto;
+    right: -2px;
+}
+nav .material-icons {
+    font-size: 26px;
+    color: rgba(255, 255, 255, 0.502);
+}
+nav .navbar-collapse {
+    text-align: right;
+    width: 100%;
+}
+.search {
+    background-color: rgb(53, 45, 47);
+    color: rgba(255, 255, 255, 0.502);
+    width: 40px;
+    cursor: pointer;
+}
+
+.search:hover {
+    color: rgb(255, 255, 255);
+}
+
+.showreel {
+    background-color: rgb(53, 45, 47);
+    border: 1px solid rgba(255, 255, 255, 0.102);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: "Teko-Light";
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 3px;
+    padding: 10px 20px 10px 15px;
+}
+.showreel:hover {
+    border: 2px solid rgba(255, 255, 255, 0.502);
+}
+.w3-badge {
+    color: rgba(255, 255, 255, 0.102);
+    width: 40px;
+    height: 4px;
+}
+
+.moviebox{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    margin: 30px auto;
+    justify-content: center;
+    display: none;
+}
+.movieboxdiv{
+    width: 100%;
+    max-width: 1054px;
+    position: relative;
+   
+}
+.movieboxdiv video{
+    width: 100%;
+    height: 100%;
+}
+.movieclose{
+    background: unset;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left:0;
+}
+.movieclose span{
+    width: 100%;
+    height: 100%;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.mouseclick {
+   
+    background-color: rgb(53, 45, 47);
+    border: rgb(53, 45, 47);
+}
+.more {
+    font-family: "Teko-Light";
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.702);
+    letter-spacing: 2px;
+}
+
+.bg {
+    margin-top: 2rem;
+    background-color: rgb(255, 255, 255);
+    height: 293px;
+}
+.bg h1 {
+    font-size: 40px;
+    font-family: "Teko-Regular";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    padding-top: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.bg button {
+    background-color: rgb(246, 60, 60);
+    font-family: "Teko-Regular";
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    letter-spacing: 3px;
+    text-align: center;
+    width: 230px;
+    height: 50px;
+    border: none;
+    margin-top: 30px;
+    box-shadow: 0px 5px 10px 0px rgba(25, 45, 51, 0.15);   
+}
+.bg button:hover {
+    box-shadow: 15px 15px 20px 10px rgba(0, 0, 0, 0.15);   
+}
+.slide {
+    background-color: rgb(246, 60, 60);
+    height: 760px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.502);
+}
+.mySlides {
+    margin-left: 60px;
+    margin-right: 50px;
+    padding-top: 400px;
+}
+.mySlides span {
+    color: rgba(255, 255, 255, 0.302);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: "Teko-Regular";
+    font-size: 30px;
+    line-height: 1.2;
+    text-align: left;
+}
+.mySlides h5 {
+    font-size: 60px;
+    font-family: "Teko-Regular";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 1.2;
+    text-align: left;
+}
+.mySlides p {
+    font-size: 18px;
+    font-family: "TitilliumWeb-Regular";
+    color: rgba(255, 255, 255, 0.702);
+    line-height: 1.333;
+    text-align: left;
+}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+.card {
+    background-color: rgb(53, 45, 47);
+}
+.div2s {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.502);
+    height: 370px;
+}
+.div2s h5 {
+    font-size: 60px;
+    font-family: "Teko-Regular";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 1.2;
+    margin-left: 50px;
+}
+.div2s p {
+    font-size: 18px;
+    font-family: "TitilliumWeb-Regular";
+    color: rgba(255, 255, 255, 0.702);
+    line-height: 1.333;
+    letter-spacing: 3px;
+    margin-left: 50px;
+    margin-right: 30px;
+}
+.project-show a {
+    font-size: 20px;
+    font-family: "Teko-Regular";
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.502);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1.2;
+}
+.project-show a:hover {
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.theme {
+    background-color: rgb(255, 255, 255);
+}
+.theme .card {
+   background-color: rgb(255, 255, 255);
+   border: none;
+   margin-right: 10px;
+   margin-top: 50px;
+}
+.theme .card img {
+    margin-left: 20px;
+    width: 46px;
+    height: 48px; 
+}
+.theme .card-title {
+    font-size: 30px;
+    font-family: "Teko-Regular";
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1;
+}
+.theme p {
+    font-size: 16px;
+    font-family: "TitilliumWeb-Regular";
+    color: rgb(85, 85, 85);
+    line-height: 1.375;
+}
+.theme h4 {
+    font-size: 40px;
+    font-family: "Teko-Regular";
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 1.2;
+}
+.connected {
+    margin-top: 100px;
+    margin-left: 120px;
+    margin-bottom: 50px;
+}
+.connected .card {
+    background-color: rgb(48, 40, 42);
+    width: 280px;
+    height: 210px;
+    border-radius: 0%;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+.fab {
+    font-size: 42px;
+}
+.connected span {
+    font-size: 30px;
+    font-family: "Teko-Regular";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 1.2;
+    margin-top: 10px;
+}
+.fal {
+    font-size: 46px;
+}
+.map-red {
+    background-color: rgb(246, 60, 60);
+    width: 752px;
+    height: 403px;
+    margin: 200px auto;
+    text-align: center;
+    justify-content: center;
+}
+.map-red i {
+    margin-top: 80px;
+}
+.map-red small {
+    font-size: 18px;
+    font-family: "Teko-Regular";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 0.889;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.map-red h5 {
+    font-size: 30px;
+    font-family: "Teko-Regular";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 5px;
+}
+.map-red p {
+    font-size: 30px;
+    font-family: "Teko-Regular";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.foot a {
+    font-size: 14px;
+    font-family: "TitilliumWeb-Regular";
+    color: rgb(85, 85, 85);
+}
+
+.foot h5 {
+    font-size: 30px;
+    font-family: "Teko-Regular";
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: 4px;
+    border-bottom: 2px solid rgb(48, 40, 42);
+    margin-top: 40px;
+}
+
+.rights {
+    border-top: 1px solid rgb(229, 229, 229);
+}
+.rights span {
+    font-size: 13px;
+    font-family: "TitilliumWeb-Regular";
+    color: rgb(85, 85, 85);
+    line-height: 1.2;
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: inline-block;
+}
+
+/*...........................................................................................................................
+.........................................................SECOND INDEX........................................................
+.............................................................................................................................*/
+
+.titleSlide {
+    height: 800px;
+}
+.title1 h1 {
+    font-size: 120px;
+    font-family: "Teko-Light";
+    letter-spacing: 12px;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 5rem;
+}
+.title1 p {
+    color: rgba(255, 255, 255, 0.702);
+    font-family: "TitilliumWeb-Regular";
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 22px;
+    line-height: 1.2;
+    margin-left: 180px;
+    margin-right: 180px;
+}
+.explore {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 2px solid rgba(255, 255, 255, 0.102);
+    font-size: 20px;
+    font-family: "Teko-Light";
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 3px;
+    padding: 10px 20px 10px 15px;
+}
+.explore:hover {
+    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.733); 
+}
+
+
+.filtergalleries {
+    background-color: rgb(255, 255, 255);
+    padding-top: 20px;
+}
+.filtergalleries .btn {
+    font-size: 20px;
+    color: rgb(85, 85, 85);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    font-family: "Teko-Light";
+}
+.filtergalleries label:hover {
+    border-bottom: 2px solid rgb(246, 60, 60);
+    color: rgb(246, 60, 60);
+}
+
+.filtergalleries span {
+    font-size: 20px;
+    font-family: "Teko-Light";
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    padding-bottom: 50px;
+   justify-content: center;
+}
+.filtergalleries span a:hover {
+    color: rgb(246, 60, 60);
+    border-bottom: 2px solid rgb(246, 60, 60);
+}
+
+
+
+.filtergalleries span .btn {
+    width: 110px;
+}
+
+.filtergalleries .btn {
+    cursor: pointer;
+}
+
+
+/* default styles so shuffle doesn't have to set them (it will if they're missing) */
+.my-shuffle {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  
+  /* Ensure images take up the same space when they load */
+  /* https://vestride.github.io/Shuffle/images */
+
+  .my-shuffle .card {
+      background-color: transparent;
+  }
+  .my-shuffle .card-body h5 {
+    font-family: "Teko-Light";
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .my-shuffle .card-body p {
+    font-size: 14px;
+    font-family: "TitilliumWeb-Regular";
+    color: rgb(85, 85, 85);
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .videotube {
+      height: 400px;
+  }
+
+  .videotube iframe {
+      width: 100%;
+      height: 100%;
+  }
+  
+  .image-item img {
+    display: block;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .showcase {
+      background-color: rgb(246, 60, 60);
+      padding-bottom: 40px;
+  }
+  .showcase h2 {
+    font-size: 40px;
+    font-family: "Teko-Light";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0;
+    padding-top: 40px;
+  }
+  .showcase p {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.702);
+      line-height: 1.2;
+      text-align: center;
+  }
+  .showcase a {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      margin-top: 20px;
+  }
+ 
+  .foot p {
+    font-size: 14px;
+    font-family: "TitilliumWeb-Regular";
+    color: rgb(85, 85, 85);
+    line-height: 2.143;
+  }
+
+  .foot span {
+      font-size: 16px;
+      text-transform: uppercase;
+      color: rgb(85, 85, 85);
+      font-family: "Teko-Light";
+      justify-content: center;
+      align-content: center;
+  }
+
+
+
+  /*..............................................................................................................................
+  ......................................................THIRD PAGE................................................................
+  ...............................................................................................................................*/
+.cards .card-sort {
+    margin: 40px;
+}
+.cards .card {
+    padding: 40px;
+}
+.card-small {
+    background-color: rgb(53, 45, 47);
+    width: 370px;
+    height: 270px;
+    cursor: pointer;
+    color: white;
+}
+.card-large {
+    background-color: rgb(53, 45, 47);
+    width: 770px;
+    height: 270px;
+    cursor: pointer;
+    color: white;
+}
+.card-large p {
+    font-size: 16px;
+    color: white;
+    font-family: "Titillium Web";
+    line-height: 1.2;
+}
+.card-large:hover {
+    background-color: rgb(246, 60, 60);
+}
+.card-small:hover {
+    background-color: rgb(246, 60, 60);
+}
+.cards h5 {
+    font-size: 30px;
+    font-family: "Teko-Light";
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.cards p {
+    font-size: 16px;
+    font-family: "Teko-Light";
+    color: rgb(85, 85, 85);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+}
+
+@media only screen and (max-width: 1200px) {
+    .connected {
+        margin-left: 100px;
+    }
+    .h1 {
+        padding-top: 6.5rem;
+    }
+    .slide {
+        height: 580px;
+    }
+    .div2s {
+        height: 280px;
+    }
+    .mySlides {
+        padding-top: 200px;
+    }
+    .movieboxdiv{
+        width: 100%;
+        max-width: 954px;
+        position: relative;
+       
+    }
+    .movieclose{
+        background: unset;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 0;
+        left: 24px;
+    }
+    
+}
+@media only screen and (max-width: 991px) {
+    .bg {
+        height: 300px;
+    }
+    .bg h1 {
+        font-size: 34px;
+    }
+    .connected {
+        margin-left: 80px;
+        margin-top: 20px;
+    }
+    .connected .card {
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .dropdown-menu {
+        margin-top: 47px;
+    }
+    .movieboxdiv{
+        max-width: 754px;
+    }
+    .movieclose{
+        top: 47px;
+        left: 1px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .h1 {
+        font-size: 96px;
+        padding-top: 4.5rem;
+    }
+    .connected {
+        margin-left: 50px;
+    }
+    .bg h1 {
+        font-size: 24px;
+    }
+    .slide {
+        height: 500px;
+    }
+    .div2s {
+        height: 240px;
+    }
+    .mySlides {
+        padding-top: 160px;
+    }
+    .foot h5 {
+        font-size: 26px;
+        letter-spacing: 2px;
+    }
+    .movieboxdiv{
+        max-width: 560px;
+    }
+    .movieclose{
+        top: 105px;
+        left: 2px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .theme .card {
+        padding: 50px auto auto auto;
+    }
+    .copies .row {
+        display: block;
+        margin-left: 30px;
+    }
+    .h1 {
+        font-size: 88px;
+    }
+    .div2s h5 {
+        font-size: 40px;
+        margin-left: 10px;
+
+    }
+    .div2s p {
+        font-size: 18px;
+        margin-left: 20px;
+        margin-right: 10px;
+        letter-spacing: 1px;
+    }
+    .mySlides {
+        margin-left: 26px;
+        margin-right: 30px;
+    }
+    .connected {
+        margin-left: 20px;
+    }
+    .connected .card {
+        margin-bottom: 20px;
+        margin-top: 10px;
+        width: 180px;
+        height: 135px;
+    }
+    .movieboxdiv{
+        max-width: 460px;
+    }
+    .movieclose{
+        top: 127px;
+        left: 2px;
+    }
+    
+}
+@media only screen and (max-width: 575px) {
+    .theme .row {
+        display: block;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .h1 {
+        font-size: 62px;
+    }
+    .bg h1 {
+        letter-spacing: 4px;
+    }
+    .connected {
+        margin-left: 10px;
+    }
+    .connected .card {
+        width: 100%;
+    }
+   
+    .div2s {
+        height: 270px;
+        padding-top: 48px;
+        padding-left: 10px;
+    }
+
+    .slide {
+        height: 560px;
+    }
+    .mySlides {
+        padding-top: 65px;
+    }
+    .map-red {
+        margin: 110px auto;
+    }
+    .foot a {
+        font-size: 16px;
+    }
+    
+    .h1 {
+        padding-top: 1.3rem;
+        letter-spacing: 5px;
+    }
+    .foot div {
+        text-align: center;
+    }
+    .foot .flex-column {
+        padding: 8px;
+    }
+    .foot .row {
+        margin: 0;
+    }
+    .movieboxdiv{
+        max-width: 310px;
+    }
+    .movieclose{
+        top: 168px;
+        left: 2px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .foot div {
+        text-align: center;
+    }
+    .foot .flex-column {
+        padding: 5px;
+    }
+    .movieboxdiv{
+        max-width: 220px;
+    }
+    .movieclose{
+        top: 193px;
+        left: 1px;
+    }
+
+}

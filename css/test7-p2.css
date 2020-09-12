@@ -1,0 +1,38 @@
+body {
+    background-color: white;
+}
+
+.nav-link {
+    color: rgba(0, 0, 0, 0.502);
+}
+
+nav {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.102);
+}
+
+li:hover {
+    border-bottom: 2px solid rgb(246, 60, 60);
+}
+
+li a:hover {
+    color: rgb(246, 60, 60);
+    font-weight: bold;
+}
+
+.search {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.502) !important;
+}
+.search:hover {
+    color: black !important;
+}
+  
+nav .dropdown {
+    border-right: 1px solid rgba(0, 0, 0, 0.102);
+}
+nav .dropdown .btn:hover {
+    color: black;
+}
+nav .dropdown-toggle {
+    color: rgba(0, 0, 0, 0.502);
+}

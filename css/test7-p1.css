@@ -1,0 +1,57 @@
+@media only screen and (max-width: 1200px) {
+    .carousel-indicators {
+        bottom: -230px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .title1 h1 {
+        font-size: 96px;
+        letter-spacing: 8px;
+    }
+    
+    .filtergalleries .navbar-collapse {
+        width: 100%;
+    }
+    .filtergalleries .navbar-nav {
+        float: left;
+        width: 15%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .title1 h1 {
+        font-size: 92px;
+        letter-spacing: 5px;
+        padding-top: 3rem;
+    }
+    .title1 p {
+        font-size: 20px;
+        margin-left: 96px;
+        margin-right: 96px;
+    }
+    .carousel-indicators {
+        bottom: -315px;
+    }
+    .showcase h2 {
+        letter-spacing: 2px;
+    }
+}
+@media only screen and (max-width: 575px) {
+    figure {
+        margin: 1em 21px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .title1 h1 {
+        font-size: 68px;
+        letter-spacing: 3px;
+        padding-top: 2rem;
+    }
+    .title1 p {
+        font-size: 20px;
+        margin-left: 26px;
+        margin-right: 26px;
+    }
+    .carousel-indicators {
+        bottom: -247px;
+    }
+}
